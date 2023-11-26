@@ -1,33 +1,35 @@
 ﻿bool Ewa = true;
 bool Darek = false;
-var womenAge = 33;
+bool women = true;
+bool men = false;
+var womenAge = 32;
 var menAge = 17;
 
 
-if (Darek)
+if (Darek && men)
 {
     if (menAge < 18)
     {
-        Console.WriteLine("Darek jest niepełnoletni.");
+        Console.WriteLine("Mężczyzna jest niepełnoletni.");
     }
 
     else
     {
-        Console.WriteLine("Darek jest pełnoletni i może iść na dyskotekę.");
+        Console.WriteLine("Darek jest pełnoletni.");
     }
 
 }
 else
 {
-    if (Ewa)
+    if (Ewa && women)
     {
         if (womenAge > 32)
         {
-            Console.WriteLine("Ewa ma więcej niż 33 lata i nie wypada jej iść na dyskotekę :).   ");
+            Console.WriteLine("Ewa, lat 33.");
         }
         else
         {
-            Console.WriteLine("To jest Ewa i jest jeszcze młoda.");
+            Console.WriteLine("Kobieta poniżej 30 lat.");
         }
 
 
@@ -38,7 +40,7 @@ else
 
     else
     {
-        Console.WriteLine("Proszę wpisać inne imię");
+        Console.WriteLine("Podaj imię i płeć");
     }
 
 }
